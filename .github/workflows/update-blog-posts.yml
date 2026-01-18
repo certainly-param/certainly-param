@@ -1,0 +1,27 @@
+name: Update Blog Posts
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    name: Update README with latest blog posts
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          feed_list: "YOUR_BLOG_RSS_FEED_URL_HERE"  # Replace with your RSS feed URL
+          commit_message: "docs: update blog posts"
+          max_post_count: 5
+          comment_tag_name: "BLOG-POST-LIST"
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'docs: update blog posts'
+          file_pattern: README.md

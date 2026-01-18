@@ -1,0 +1,36 @@
+name: Update Pinned Repositories
+
+on:
+  schedule:
+    # Runs daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    name: Update README with pinned repositories
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update Pinned Repos Section
+        uses: anmol098/waka-readme-stats@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHOW_PROJECTS: true
+          SHOW_LINES_OF_CODE: true
+          SHOW_COMMIT_LOCALIZATION: true
+          SHOW_PROFILE_VIEWS: true
+          SHOW_DAYS_OF_WEEK: true
+          SHOW_LANGUAGE: true
+          SHOW_EDITORS: true
+          SHOW_OS: true
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'docs: update pinned repositories'
+          file_pattern: README.md
