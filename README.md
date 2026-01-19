@@ -45,7 +45,7 @@ Full-stack systems & AI developer specializing in the full lifecycle of AI and h
 <h3 align="center">🔗 Connect With Me</h3>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/param-chaudhari">
+  <a href="http://www.linkedin.com/in/param-chaudhari-07a400236">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   <a href="mailto:psch@cs.unc.edu">
@@ -65,14 +65,32 @@ Full-stack systems & AI developer specializing in the full lifecycle of AI and h
 <h3 align="center">💻 Languages</h3>
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![LLVM](https://img.shields.io/badge/LLVM-185619?style=for-the-badge&logo=llvm&logoColor=white)
-![Assembly](https://img.shields.io/badge/Assembly-6E4C13?style=for-the-badge&logo=assemblyscript&logoColor=white)
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-FF6600?style=for-the-badge&logo=verilog&logoColor=white)
-![CUDA](https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Python](https://img.shields.io/badge/Python-55.28%25-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LLVM](https://img.shields.io/badge/LLVM-12.88%25-185619?style=for-the-badge&logo=llvm&logoColor=white)
+![Assembly](https://img.shields.io/badge/Assembly-12.24%25-6E4C13?style=for-the-badge&logo=assemblyscript&logoColor=white)
+![SystemVerilog](https://img.shields.io/badge/SystemVerilog-5.54%25-FF6600?style=for-the-badge&logo=verilog&logoColor=white)
+![CUDA](https://img.shields.io/badge/CUDA-3.79%25-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![C++](https://img.shields.io/badge/C++-2.07%25-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Go](https://img.shields.io/badge/Go-1.53%25-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![C](https://img.shields.io/badge/C-1.08%25-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
+
+<br>
+
+<details>
+<summary><b>📊 Language Breakdown</b></summary>
+
+| Rank | Language | Usage |
+|:---:|:---:|---|
+| 🥇 | **Python** | 55.28% |
+| 🥈 | **LLVM** | 12.88% |
+| 🥉 | **Assembly** | 12.24% |
+| 4 | **SystemVerilog** | 5.54% |
+| 5 | **CUDA** | 3.79% |
+| 6 | **C++** | 2.07% |
+| 7 | **Go** | 1.53% |
+| 8 | **C** | 1.08% |
+
+</details>
 
 </div>
 
@@ -100,17 +118,6 @@ Full-stack systems & AI developer specializing in the full lifecycle of AI and h
 ![Public%20Repos](https://img.shields.io/badge/Public%20Repos-21-10B981?style=for-the-badge&logo=github&logoColor=white)
 ![Forked%20Repos](https://img.shields.io/badge/Forked%20Repos-11-FF6B6B?style=for-the-badge&logo=git&logoColor=white)
 
-</div>
-
-<div align="center">
-  
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=certainly-param&layout=compact&langs_count=8&theme=transparent"/>
-  
-  <br><br>
-  
-  <!-- GitHub Streak Stats -->
-  <img src="https://github-readme-streak-stats.demolab.com/?user=certainly-param&theme=github&hide_border=true&background=transparent" alt="GitHub Streak"/>
-  
 </div>
 
 ---
