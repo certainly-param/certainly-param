@@ -131,9 +131,9 @@ Full-stack systems & AI developer specializing in the full lifecycle of AI and h
 </div>
 
 <!--START_SECTION:activity-->
-1. 🗣️ Commented on issue in [repository-name](https://github.com/certainly-param/repo)
-2. 🎉 Merged PR in [repository-name](https://github.com/certainly-param/repo)
-3. 💪 Opened PR in [repository-name](https://github.com/certainly-param/repo)
+1. 🔒 Closed issue [#1](https://github.com/certainly-param/TAPMIC-Project/issues/1) in [certainly-param/TAPMIC-Project](https://github.com/certainly-param/TAPMIC-Project)
+2. ❗ Opened issue [#1](https://github.com/certainly-param/TAPMIC-Project/issues/1) in [certainly-param/TAPMIC-Project](https://github.com/certainly-param/TAPMIC-Project)
+3. 🗣 Commented on [#2](https://github.com/certainly-param/pydantic-ai/pull/2#issuecomment-3760926290) in [certainly-param/pydantic-ai](https://github.com/certainly-param/pydantic-ai)
 <!--END_SECTION:activity-->
 
 ---
