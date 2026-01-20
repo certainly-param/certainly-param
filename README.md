@@ -131,9 +131,9 @@ Full-stack systems & AI developer specializing in the full lifecycle of AI and h
 </div>
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#3885](https://github.com/pydantic/pydantic-ai/issues/3885#issuecomment-3766018743) in [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)
-2. 🔒 Closed issue [#1](https://github.com/certainly-param/TAPMIC-Project/issues/1) in [certainly-param/TAPMIC-Project](https://github.com/certainly-param/TAPMIC-Project)
-3. ❗ Opened issue [#1](https://github.com/certainly-param/TAPMIC-Project/issues/1) in [certainly-param/TAPMIC-Project](https://github.com/certainly-param/TAPMIC-Project)
+1. 💪 Opened PR [#261](https://github.com/anthropics/skills/pull/261) in [anthropics/skills](https://github.com/anthropics/skills)
+2. 💪 Opened PR [#260](https://github.com/anthropics/skills/pull/260) in [anthropics/skills](https://github.com/anthropics/skills)
+3. ❗ Opened issue [#259](https://github.com/anthropics/skills/issues/259) in [anthropics/skills](https://github.com/anthropics/skills)
 <!--END_SECTION:activity-->
 
 ---
