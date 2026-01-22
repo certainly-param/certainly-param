@@ -131,9 +131,9 @@ Full-stack systems & AI developer specializing in the full lifecycle of AI and h
 </div>
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#261](https://github.com/anthropics/skills/pull/261) in [anthropics/skills](https://github.com/anthropics/skills)
-2. 💪 Opened PR [#260](https://github.com/anthropics/skills/pull/260) in [anthropics/skills](https://github.com/anthropics/skills)
-3. ❗ Opened issue [#259](https://github.com/anthropics/skills/issues/259) in [anthropics/skills](https://github.com/anthropics/skills)
+1. ❗ Opened issue [#6947](https://github.com/verilator/verilator/issues/6947) in [verilator/verilator](https://github.com/verilator/verilator)
+2. 💪 Opened PR [#261](https://github.com/anthropics/skills/pull/261) in [anthropics/skills](https://github.com/anthropics/skills)
+3. 💪 Opened PR [#260](https://github.com/anthropics/skills/pull/260) in [anthropics/skills](https://github.com/anthropics/skills)
 <!--END_SECTION:activity-->
 
 ---
