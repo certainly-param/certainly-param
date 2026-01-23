@@ -29,3 +29,5 @@ jobs:
           file_pattern: README.md
           commit_user_name: github-actions[bot]
           commit_user_email: github-actions[bot]@users.noreply.github.com
+          skip_dirty_check: true
+          skip_fetch: true
