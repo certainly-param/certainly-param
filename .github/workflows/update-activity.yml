@@ -23,7 +23,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        continue-on-error: true
         with:
           commit_message: 'docs: update activity feed'
           file_pattern: README.md
@@ -31,4 +33,3 @@ jobs:
           commit_user_email: github-actions[bot]@users.noreply.github.com
           skip_dirty_check: true
           skip_fetch: true
-          skip_if_empty: true

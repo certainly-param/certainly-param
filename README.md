@@ -1,11 +1,19 @@
 <div align="center">
 
-<!-- Terminal Window Header -->
-<pre style="background-color: #0d1117; color: #00ff00; padding: 10px; border-radius: 5px; margin: 0 auto; display: inline-block;">
-╭───────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│  ● ○ ○  param@github: ~/certainly-param                                                               │
-├───────────────────────────────────────────────────────────────────────────────────────────────────────┤
+<!-- Terminal Window Frame -->
+<table style="border-collapse: collapse; width: 100%; max-width: 900px; margin: 0 auto; background-color: #0d1117; border: 2px solid #00ff00;">
+<tr>
+<td colspan="3" style="background-color: #0d1117; color: #00ff00; padding: 10px; border-bottom: 2px solid #00ff00; font-family: 'Courier New', monospace;">
+<pre style="margin: 0; padding: 0; background: transparent; color: #00ff00;">
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│  ● ○ ○  param@github: ~/certainly-param                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 </pre>
+</td>
+</tr>
+<tr>
+<td style="width: 2px; background-color: #00ff00; padding: 0;"></td>
+<td style="background-color: #0d1117; color: #00ff00; padding: 20px; font-family: 'Courier New', monospace;">
 
 <!-- Terminal-style animated header -->
 <a href="https://github.com/certainly-param">
@@ -28,13 +36,9 @@
 [![Blog](https://img.shields.io/badge/Blog-0d1117?style=flat-square&logo=medium&logoColor=00ff00)](https://medium.com/@paramchaudhari.work)
 [![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=flat-square&logo=github&logoColor=00ff00)](https://github.com/certainly-param)
 
-</div>
-
 ---
 
 ### `$ cat tech_stack.txt`
-
-<div align="center">
 
 **`// Languages`**
 
@@ -85,23 +89,15 @@
 ![Git](https://img.shields.io/badge/Git-0d1117?style=flat-square&logo=git&logoColor=00ff00)
 ![CI/CD](https://img.shields.io/badge/CI/CD-0d1117?style=flat-square&logo=githubactions&logoColor=00ff00)
 
-</div>
-
 ---
 
 ### `$ git log --graph`
 
-<div align="center">
-
 ![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=certainly-param&theme=green&hide_border=true&bg_color=0d1117&color=00ff00&line=00ff00&point=00ff00&area=true&area_color=00ff00&custom_title=Contribution%20Graph)
-
-</div>
 
 ---
 
 ### `$ ls ~/projects`
-
-<div align="center">
 
 | Project | Description |
 |:--------|:------------|
@@ -110,13 +106,9 @@
 | **[TrialMatch-AI](https://github.com/certainly-param)** | Clinical trial matching with RAG pipeline and medical CoT reasoning |
 | **[Raft-FMSS](https://github.com/certainly-param)** | Distributed consensus verification using TLA+ and KLEE symbolic execution |
 
-</div>
-
 ---
 
 ### `$ git log --author=param --oneline`
-
-<div align="center">
 
 | Contribution | Description |
 |:-------------|:------------|
@@ -125,30 +117,20 @@
 | **[CVA6](https://github.com/openhwgroup/cva6)** | RV64 interrupt cause recording fix; eliminated unintended latches |
 | **[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)** | Resource leak diagnostics for Streamable HTTP transport |
 
-</div>
-
 ---
 
 ### `$ curl blog.rss`
 
-<div align="center">
-
 <!-- BLOG-POST-LIST:START -->
-- [The Paradox of Choice: A Human’s Guide to Selecting the Right AI Model](https://medium.com/@paramchaudhari.work/the-paradox-of-choice-a-humans-guide-to-selecting-the-right-ai-model-da5fb1063e9a?source=rss-8f6454702aa6------2)
+- [The Paradox of Choice: A Human's Guide to Selecting the Right AI Model](https://medium.com/@paramchaudhari.work/the-paradox-of-choice-a-humans-guide-to-selecting-the-right-ai-model-da5fb1063e9a?source=rss-8f6454702aa6------2)
 <!-- BLOG-POST-LIST:END -->
-
-</div>
 
 ---
 
 ### `$ wakatime --week`
 
-<div align="center">
-
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
-
-</div>
 
 ---
 
@@ -162,15 +144,23 @@
 
 ---
 
-<div align="center">
-
 ![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=00ff00&style=flat-square&label=VISITORS)
+![GitHub Stars](https://img.shields.io/github/stars/certainly-param?style=flat-square&color=00ff00&labelColor=0d1117&label=STARS)
+![GitHub Forks](https://img.shields.io/github/forks/certainly-param?style=flat-square&color=00ff00&labelColor=0d1117&label=FORKS)
+<!-- Stats badges above are auto-updated by .github/workflows/update-stats.yml to show totals across all repos -->
 
-<!-- Terminal Window Footer -->
-<pre style="background-color: #0d1117; color: #00ff00; padding: 10px; border-radius: 5px; margin: 0 auto; display: inline-block;">
-├───────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  param@github: ~ $ exit                                                                               │
-╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+</td>
+<td style="width: 2px; background-color: #00ff00; padding: 0;"></td>
+</tr>
+<tr>
+<td colspan="3" style="background-color: #0d1117; color: #00ff00; padding: 10px; border-top: 2px solid #00ff00; font-family: 'Courier New', monospace;">
+<pre style="margin: 0; padding: 0; background: transparent; color: #00ff00;">
+╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│  param@github: ~ $ exit                                                                                             │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 </pre>
+</td>
+</tr>
+</table>
 
 </div>

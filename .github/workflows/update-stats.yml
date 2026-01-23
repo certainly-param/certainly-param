@@ -1,0 +1,111 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    name: Calculate and update total stars and forks
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Calculate and update stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 << 'EOF'
+          import os
+          import re
+          import requests
+          
+          token = os.environ.get('GITHUB_TOKEN')
+          username = 'certainly-param'
+          
+          # Fetch all repositories
+          print(f"Fetching all repositories for {username}...")
+          total_stars = 0
+          total_forks = 0
+          page = 1
+          per_page = 100
+          
+          headers = {
+              'Authorization': f'token {token}',
+              'Accept': 'application/vnd.github.v3+json'
+          }
+          
+          while True:
+              url = f'https://api.github.com/users/{username}/repos?per_page={per_page}&page={page}&type=all'
+              response = requests.get(url, headers=headers)
+              response.raise_for_status()
+              repos = response.json()
+              
+              if not repos:
+                  break
+              
+              for repo in repos:
+                  total_stars += repo.get('stargazers_count', 0)
+                  total_forks += repo.get('forks_count', 0)
+              
+              print(f"Page {page}: Processed {len(repos)} repos. Running totals - Stars: {total_stars}, Forks: {total_forks}")
+              
+              if len(repos) < per_page:
+                  break
+              
+              page += 1
+          
+          print(f"\nFinal totals:")
+          print(f"Total Stars: {total_stars}")
+          print(f"Total Forks: {total_forks}")
+          
+          # Read README
+          with open('README.md', 'r', encoding='utf-8') as f:
+              readme_content = f.read()
+          
+          # Create new badge URLs
+          stars_badge = f"![GitHub Stars](https://img.shields.io/badge/STARS-{total_stars}-00ff00?style=flat-square&labelColor=0d1117)"
+          forks_badge = f"![GitHub Forks](https://img.shields.io/badge/FORKS-{total_forks}-00ff00?style=flat-square&labelColor=0d1117)"
+          
+          # Replace existing badges
+          # Pattern for stars badge
+          stars_pattern = r'!\[GitHub Stars\]\(https://img\.shields\.io/github/stars/certainly-param[^)]*\)'
+          readme_content = re.sub(stars_pattern, stars_badge, readme_content)
+          
+          # Pattern for forks badge
+          forks_pattern = r'!\[GitHub Forks\]\(https://img\.shields\.io/github/forks/certainly-param[^)]*\)'
+          readme_content = re.sub(forks_pattern, forks_badge, readme_content)
+          
+          # Write back
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(readme_content)
+          
+          print("\n✓ README updated successfully!")
+          EOF
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        continue-on-error: true
+        with:
+          commit_message: 'docs: update total stars and forks stats'
+          file_pattern: README.md
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          skip_dirty_check: true
+          skip_fetch: true

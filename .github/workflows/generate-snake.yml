@@ -26,108 +26,132 @@ jobs:
 
       - name: Debug - Check SVG structure
         run: |
-          echo "Checking SVG structure..."
-          head -100 dist/*.svg | grep -E "(rect|animate|opacity)" | head -20 || true
+          echo "=== Checking SVG structure ==="
+          for file in dist/*.svg; do
+            echo "File: $file"
+            echo "--- Opacity animations (first 5) ---"
+            grep -o '<animate[^>]*opacity[^>]*>' "$file" | head -5 || echo "No opacity animations found"
+            echo "--- Opacity animations with 'to=0' ---"
+            grep -o '<animate[^>]*opacity[^>]*to=["\']0["\'][^>]*>' "$file" | head -3 || echo "No opacity to=0 found"
+            echo "--- Sample rect with animations ---"
+            grep -A 5 '<rect[^>]*>' "$file" | head -10 || echo "No rects found"
+            echo ""
+          done
       
       - name: Modify SVG to make eaten boxes purple
         run: |
           python3 << 'EOF'
           import re
           import glob
+          from xml.etree import ElementTree as ET
           
           PURPLE = "#9d4edd"
           
           for svg_file in glob.glob("dist/*.svg"):
+              print(f"\nProcessing {svg_file}...")
+              
               with open(svg_file, 'r', encoding='utf-8') as f:
                   content = f.read()
               
-              original_len = len(content)
-              
-              # Strategy: The snake animation likely uses opacity animations
-              # We need to find ALL patterns where opacity goes to 0 and replace with purple fill
-              
-              # Pattern 1: <animate attributeName="opacity" ... to="0" ...>
-              # Replace with fill animation to purple + keep opacity at 1
-              def replace_opacity_zero(match):
-                  anim = match.group(0)
+              # Try to parse as XML first
+              try:
+                  # Register namespaces to handle SVG properly
+                  ET.register_namespace('', 'http://www.w3.org/2000/svg')
                   
-                  # Extract timing
-                  begin_match = re.search(r'begin=["\']([^"\']+)["\']', anim)
-                  begin_time = begin_match.group(1) if begin_match else "0s"
+                  tree = ET.parse(svg_file)
+                  root = tree.getroot()
                   
-                  dur_match = re.search(r'dur=["\']([^"\']+)["\']', anim)
-                  dur_time = dur_match.group(1) if dur_match else "0.1s"
+                  modifications = 0
                   
-                  # Create purple fill animation
-                  fill_anim = f'<animate attributeName="fill" to="{PURPLE}" begin="{begin_time}" dur="{dur_time}" fill="freeze"/>'
-                  
-                  # Keep opacity at 1 instead of 0
-                  anim_modified = anim.replace('to="0"', 'to="1"')
-                  anim_modified = re.sub(r'values=["\']([^"\']*)0([^"\']*)["\']', r'values="\11\2"', anim_modified)
-                  
-                  return fill_anim + anim_modified
-              
-              # Find and replace all opacity animations going to 0
-              content = re.sub(
-                  r'<animate[^>]*attributeName=["\']opacity["\'][^>]*to=["\']0["\'][^>]*>',
-                  replace_opacity_zero,
-                  content
-              )
-              
-              # Pattern 2: values="...0..." (opacity values ending in 0)
-              content = re.sub(
-                  r'(<animate[^>]*attributeName=["\']opacity["\'][^>]*values=["\'])([^"\']*0[^"\']*)(["\'][^>]*>)',
-                  lambda m: replace_opacity_zero(m.group(0)) if '0' in m.group(2) else m.group(0),
-                  content
-              )
-              
-              # Pattern 3: Find rects with opacity animations and add fill animation
-              # This handles cases where rects have multiple animations
-              def add_purple_to_rect(match):
-                  rect_tag = match.group(1)
-                  inner_content = match.group(2)
-                  
-                  # Check if there's an opacity animation going to 0
-                  if 'attributeName="opacity"' in inner_content and ('to="0"' in inner_content or ('values=' in inner_content and '0' in inner_content)):
-                      # Find the first opacity animation
-                      opacity_anim_match = re.search(r'<animate[^>]*attributeName=["\']opacity["\'][^>]*>', inner_content)
-                      if opacity_anim_match:
-                          anim = opacity_anim_match.group(0)
-                          begin_match = re.search(r'begin=["\']([^"\']+)["\']', anim)
-                          begin_time = begin_match.group(1) if begin_match else "0s"
+                  # Find all animate elements with opacity
+                  for animate in root.iter():
+                      tag_name = animate.tag.split('}')[-1] if '}' in animate.tag else animate.tag
+                      
+                      if tag_name == 'animate' and animate.get('attributeName') == 'opacity':
+                          to_val = animate.get('to')
+                          values_val = animate.get('values')
                           
-                          # Add purple fill animation right after the rect tag
-                          fill_anim = f'<animate attributeName="fill" to="{PURPLE}" begin="{begin_time}" dur="0.1s" fill="freeze"/>'
-                          
-                          # Modify the opacity animation
-                          inner_content = inner_content.replace(anim, replace_opacity_zero(opacity_anim_match))
-                          
-                          return rect_tag + fill_anim + inner_content
+                          # If opacity goes to 0, add purple fill animation
+                          if to_val == '0' or (values_val and '0' in values_val):
+                              begin_time = animate.get('begin', '0s')
+                              dur_time = animate.get('dur', '0.1s')
+                              
+                              # Create purple fill animation
+                              ns = {'': 'http://www.w3.org/2000/svg'} if '{' in list(root)[0].tag else {}
+                              fill_anim = ET.Element('animate', nsmap=ns if ns else None)
+                              fill_anim.set('attributeName', 'fill')
+                              fill_anim.set('to', PURPLE)
+                              fill_anim.set('begin', begin_time)
+                              fill_anim.set('dur', dur_time)
+                              fill_anim.set('fill', 'freeze')
+                              
+                              # Insert before opacity animation
+                              parent = animate.getparent()
+                              if parent is not None:
+                                  idx = list(parent).index(animate)
+                                  parent.insert(idx, fill_anim)
+                                  modifications += 1
+                              
+                              # Change opacity to stay at 1
+                              if to_val == '0':
+                                  animate.set('to', '1')
+                              if values_val and '0' in values_val:
+                                  animate.set('values', values_val.replace('0', '1'))
                   
-                  return match.group(0)
+                  if modifications > 0:
+                      # Write back
+                      tree.write(svg_file, encoding='utf-8', xml_declaration=True)
+                      print(f"  ✓ Modified {modifications} animations using XML parsing")
+                  else:
+                      print(f"  ⚠ No opacity-to-0 animations found in XML structure")
+                      raise Exception("No matches found - trying regex")
+                  
+              except Exception as e:
+                  print(f"  XML parsing failed: {e}, using regex fallback...")
+                  
+                  # Fallback: Use regex approach
+                  def add_purple_fill(match):
+                      anim = match.group(0)
+                      begin_match = re.search(r'begin=["\']([^"\']+)["\']', anim)
+                      begin_time = begin_match.group(1) if begin_match else "0s"
+                      
+                      dur_match = re.search(r'dur=["\']([^"\']+)["\']', anim)
+                      dur_time = dur_match.group(1) if dur_match else "0.1s"
+                      
+                      # Create purple fill animation
+                      fill_anim = f'<animate attributeName="fill" to="{PURPLE}" begin="{begin_time}" dur="{dur_time}" fill="freeze"/>'
+                      
+                      # Modify opacity to stay at 1
+                      anim_modified = anim.replace('to="0"', 'to="1"')
+                      anim_modified = re.sub(r'values=["\']([^"\']*)0([^"\']*)["\']', r'values="\11\2"', anim_modified)
+                      
+                      return fill_anim + anim_modified
+                  
+                  # Find all opacity animations going to 0
+                  content = re.sub(
+                      r'<animate[^>]*attributeName=["\']opacity["\'][^>]*to=["\']0["\'][^>]*>',
+                      add_purple_fill,
+                      content
+                  )
+                  
+                  # Handle values patterns
+                  content = re.sub(
+                      r'(<animate[^>]*attributeName=["\']opacity["\'][^>]*values=["\'])([^"\']*0[^"\']*)(["\'][^>]*>)',
+                      lambda m: add_purple_fill(m.group(0)) if '0' in m.group(2) else m.group(0),
+                      content
+                  )
+                  
+                  with open(svg_file, 'w', encoding='utf-8') as f:
+                      f.write(content)
+                  
+                  print(f"  ✓ Modified using regex fallback")
               
-              # Process rect blocks
-              content = re.sub(
-                  r'(<rect[^>]*>)(.*?)(</rect>)',
-                  add_purple_to_rect,
-                  content,
-                  flags=re.DOTALL
-              )
+              # Verify purple was added
+              with open(svg_file, 'r', encoding='utf-8') as f:
+                  final_content = f.read()
               
-              # Pattern 4: Direct style opacity:0
-              content = re.sub(
-                  r'(<rect[^>]*style=["\'])([^"\']*opacity:\s*0[^"\']*)(["\'])',
-                  lambda m: m.group(1) + m.group(2).replace('opacity:0', f'fill:{PURPLE};opacity:1') + m.group(3),
-                  content
-              )
-              
-              # Count purple occurrences
-              purple_count = content.count(PURPLE)
-              
-              with open(svg_file, 'w', encoding='utf-8') as f:
-                  f.write(content)
-              
-              print(f"Modified {svg_file}: Found {purple_count} purple color references")
+              purple_count = final_content.count(PURPLE)
+              print(f"  → Found {purple_count} purple color references in final SVG")
           EOF
 
       - name: Push to output branch
