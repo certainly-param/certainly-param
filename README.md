@@ -127,13 +127,6 @@
 
 ---
 
-### `$ wakatime --week`
-
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-
----
-
 ### `$ tail -f activity.log`
 
 <!--START_SECTION:activity-->
