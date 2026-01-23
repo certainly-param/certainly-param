@@ -12,16 +12,12 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=2500&pause=1000&color=00FF00&center=true&vCenter=true&width=700&lines=%24+whoami;PARAM+CHAUDHARI;%24+cat+focus.txt;AI+%E2%94%82+Systems+%E2%94%82+Hardware+Security" alt="Typing SVG" />
 </a>
 
-```
-     ┌───┐     ┌───┐     ┌───┐          ┌───┐     ┌───┐     ┌───┐
-     │ ◉ │────▶│ ◉ │────▶│ ◉ │    ⚡    │ ◉ │────▶│ ◉ │────▶│ ◉ │
-     └─┬─┘     └─┬─┘     └─┬─┘          └─┬─┘     └─┬─┘     └─┬─┘
-       │         │         │    NEURAL    │         │         │
-       ▼         ▼         ▼      +       ▼         ▼         ▼
-     ┌───┐     ┌───┐     ┌───┐  SILICON ┌───┐     ┌───┐     ┌───┐
-     │ ◉ │◀────│ ◉ │◀────│ ◉ │          │ ◉ │◀────│ ◉ │◀────│ ◉ │
-     └───┘     └───┘     └───┘          └───┘     └───┘     └───┘
-```
+<!-- GitHub Contribution Snake Animation -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake.svg" />
+</picture>
 
 **`> Research Assistant @ UNC Chapel Hill | MS Computer Science`**
 
@@ -168,5 +164,12 @@
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=00ff00&style=flat-square&label=VISITORS)
+
+<!-- Terminal Window Footer -->
+```diff
++ ├───────────────────────────────────────────────────────────────────────────────────────────────────────┤
++ │  param@github: ~ $ exit                                                                               │
++ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────╯
+```
 
 </div>
