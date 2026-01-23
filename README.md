@@ -137,9 +137,9 @@
 
 ---
 
-![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=00ff00&style=flat-square&label=VISITORS)
-![GitHub Stars](https://img.shields.io/badge/STARS-11-00ff00?style=flat-square&labelColor=0d1117)
-![GitHub Forks](https://img.shields.io/badge/FORKS-6-00ff00?style=flat-square&labelColor=0d1117)
+![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=000000&style=flat-square&label=VISITORS)
+![GitHub Stars](https://img.shields.io/badge/STARS-11-000000?style=flat-square&labelColor=0d1117)
+![GitHub Forks](https://img.shields.io/badge/FORKS-6-000000?style=flat-square&labelColor=0d1117)
 <!-- Stats badges above are auto-updated by .github/workflows/update-stats.yml to show totals across all repos -->
 
 </td>
