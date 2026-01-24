@@ -1,35 +1,33 @@
 <div align="center">
 
 <!-- Terminal Window Frame -->
-<table style="border-collapse: collapse; width: 100%; max-width: 900px; margin: 0 auto; background-color: #0d1117; border: 2px solid #00ff00;">
+<table>
 <tr>
-<td colspan="3" style="background-color: #0d1117; color: #00ff00; padding: 10px; border-bottom: 2px solid #00ff00; font-family: 'Courier New', monospace;">
-<pre style="margin: 0; padding: 0; background: transparent; color: #00ff00;">
-╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│  ● ○ ○  param@github: ~/certainly-param                                                                             │
-╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-</pre>
+<td>
+
+● ○ ○  param@github: ~/certainly-param
+
 </td>
 </tr>
 <tr>
-<td style="width: 2px; background-color: #00ff00; padding: 0;"></td>
-<td style="background-color: #0d1117; color: #00ff00; padding: 20px; font-family: 'Courier New', monospace;">
+<td>
 
 <!-- Terminal-style animated header -->
+<p align="center">
 <a href="https://github.com/certainly-param">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=2500&pause=1000&color=00FF00&center=true&vCenter=true&width=700&lines=%24+whoami;PARAM+CHAUDHARI;%24+cat+focus.txt;AI+%E2%94%82+Systems+%E2%94%82+Hardware+Security" alt="Typing SVG" />
 </a>
+</p>
 
-<!-- GitHub Contribution Snake Animation -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake.svg" />
 </picture>
 
-**`> Research Assistant @ UNC Chapel Hill | MS Computer Science`**
+**> Research Assistant @ UNC Chapel Hill | MS Computer Science**
 
-**`> Currently working on formal verification for RISC-V architectures`**
+**> Currently working on formal verification for RISC-V architectures**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=00ff00)](http://www.linkedin.com/in/param-chaudhari-07a400236)
 [![Email](https://img.shields.io/badge/Email-0d1117?style=flat-square&logo=gmail&logoColor=00ff00)](mailto:psch@cs.unc.edu)
@@ -38,9 +36,9 @@
 
 ---
 
-### `$ cat tech_stack.txt`
+### $ cat tech_stack.txt
 
-**`// Languages`**
+**// Languages**
 
 ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=00ff00)
 ![C/C++](https://img.shields.io/badge/C/C++-0d1117?style=flat-square&logo=c%2B%2B&logoColor=00ff00)
@@ -51,7 +49,7 @@
 ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-0d1117?style=flat-square&logoColor=00ff00)
 ![Bash](https://img.shields.io/badge/Bash-0d1117?style=flat-square&logo=gnubash&logoColor=00ff00)
 
-**`// AI & ML`**
+**// AI & ML**
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-0d1117?style=flat-square&logo=pytorch&logoColor=00ff00)
 ![vLLM](https://img.shields.io/badge/vLLM-0d1117?style=flat-square&logoColor=00ff00)
@@ -63,7 +61,7 @@
 ![Vector_DBs](https://img.shields.io/badge/Vector_DBs-0d1117?style=flat-square&logoColor=00ff00)
 ![Spark](https://img.shields.io/badge/Spark-0d1117?style=flat-square&logo=apachespark&logoColor=00ff00)
 
-**`// Backend & Cloud`**
+**// Backend & Cloud**
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=00ff00)
 ![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=node.js&logoColor=00ff00)
@@ -75,14 +73,14 @@
 ![GCP](https://img.shields.io/badge/GCP-0d1117?style=flat-square&logo=googlecloud&logoColor=00ff00)
 ![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=00ff00)
 
-**`// Cryptography & Security`**
+**// Cryptography & Security**
 
 ![OpenSSL](https://img.shields.io/badge/OpenSSL-0d1117?style=flat-square&logo=openssl&logoColor=00ff00)
 ![Post--Quantum](https://img.shields.io/badge/Post--Quantum-0d1117?style=flat-square&logoColor=00ff00)
 ![ZK_Proofs](https://img.shields.io/badge/ZK_Proofs-0d1117?style=flat-square&logoColor=00ff00)
 ![Formal_Methods](https://img.shields.io/badge/Formal_Methods-0d1117?style=flat-square&logoColor=00ff00)
 
-**`// Systems & Tools`**
+**// Systems & Tools**
 
 ![Linux](https://img.shields.io/badge/Linux-0d1117?style=flat-square&logo=linux&logoColor=00ff00)
 ![RISC--V](https://img.shields.io/badge/RISC--V-0d1117?style=flat-square&logo=riscv&logoColor=00ff00)
@@ -91,13 +89,13 @@
 
 ---
 
-### `$ git log --graph`
+### $ git log --graph
 
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=certainly-param&theme=green&hide_border=true&bg_color=0d1117&color=00ff00&line=00ff00&point=00ff00&area=true&area_color=00ff00&custom_title=Contribution%20Graph)
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=certainly-param&theme=green&hide_border=true&bg_color=transparent&color=00ff00&line=00ff00&point=00ff00&area=true&area_color=00ff00&custom_title=Contribution%20Graph)
 
 ---
 
-### `$ ls ~/projects`
+### $ ls ~/projects
 
 | Project | Description |
 |:--------|:------------|
@@ -108,7 +106,7 @@
 
 ---
 
-### `$ git log --author=param --oneline`
+### $ git log --author=param --oneline
 
 | Contribution | Description |
 |:-------------|:------------|
@@ -119,7 +117,7 @@
 
 ---
 
-### `$ curl blog.rss`
+### $ curl blog.rss
 
 <!-- BLOG-POST-LIST:START -->
 - [The Paradox of Choice: A Human's Guide to Selecting the Right AI Model](https://medium.com/@paramchaudhari.work/the-paradox-of-choice-a-humans-guide-to-selecting-the-right-ai-model-da5fb1063e9a?source=rss-8f6454702aa6------2)
@@ -127,7 +125,7 @@
 
 ---
 
-### `$ tail -f activity.log`
+### $ tail -f activity.log
 
 <!--START_SECTION:activity-->
 1. 🔒 Closed issue [#6947](https://github.com/verilator/verilator/issues/6947) in [verilator/verilator](https://github.com/verilator/verilator)
@@ -137,21 +135,22 @@
 
 ---
 
+<<<<<<< HEAD
 ![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=000000&style=flat-square&label=VISITORS)
 ![GitHub Stars](https://img.shields.io/badge/STARS-11-000000?style=flat-square&labelColor=0d1117)
 ![GitHub Forks](https://img.shields.io/badge/FORKS-6-000000?style=flat-square&labelColor=0d1117)
+=======
+*Made while doing lot of snacking ;)*
+
+![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=00ff00&style=flat-square&label=VISITORS)
+![GitHub Stars](https://img.shields.io/badge/STARS-11-00ff00?style=flat-square&labelColor=0d1117)
+![GitHub Forks](https://img.shields.io/badge/FORKS-6-00ff00?style=flat-square&labelColor=0d1117)
+>>>>>>> b5ac9ed (style: simplify terminal frame and clean up formatting)
 <!-- Stats badges above are auto-updated by .github/workflows/update-stats.yml to show totals across all repos -->
 
-</td>
-<td style="width: 2px; background-color: #00ff00; padding: 0;"></td>
-</tr>
-<tr>
-<td colspan="3" style="background-color: #0d1117; color: #00ff00; padding: 10px; border-top: 2px solid #00ff00; font-family: 'Courier New', monospace;">
-<pre style="margin: 0; padding: 0; background: transparent; color: #00ff00;">
-╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│  param@github: ~ $ exit                                                                                             │
-╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
-</pre>
+
+param@github: ~ $ exit
+
 </td>
 </tr>
 </table>
