@@ -20,11 +20,13 @@
 </a>
 </p>
 
+<p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/certainly-param/certainly-param/output/github-contribution-grid-snake.svg" />
 </picture>
+</p>
 
 **> Research Assistant @ UNC Chapel Hill | MS Computer Science**
 
@@ -136,13 +138,14 @@
 
 ---
 
-<<<<<<< HEAD
 ![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=000000&style=flat-square&label=VISITORS)
 ![GitHub Stars](https://img.shields.io/badge/STARS-11-000000?style=flat-square&labelColor=0d1117)
 ![GitHub Forks](https://img.shields.io/badge/FORKS-6-000000?style=flat-square&labelColor=0d1117)
 =======
+<br>
+<p align="center">
 *Made while doing lot of snacking ;)*
-
+</p>
 <!-- Stats badges above are auto-updated by .github/workflows/update-stats.yml to show totals across all repos -->
 
 
