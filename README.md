@@ -11,7 +11,8 @@
 </tr>
 <tr>
 <td>
-
+<br>
+<br>
 <!-- Terminal-style animated header -->
 <p align="center">
 <a href="https://github.com/certainly-param">
@@ -142,10 +143,6 @@
 =======
 *Made while doing lot of snacking ;)*
 
-![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=00ff00&style=flat-square&label=VISITORS)
-![GitHub Stars](https://img.shields.io/badge/STARS-11-00ff00?style=flat-square&labelColor=0d1117)
-![GitHub Forks](https://img.shields.io/badge/FORKS-6-00ff00?style=flat-square&labelColor=0d1117)
->>>>>>> b5ac9ed (style: simplify terminal frame and clean up formatting)
 <!-- Stats badges above are auto-updated by .github/workflows/update-stats.yml to show totals across all repos -->
 
 
