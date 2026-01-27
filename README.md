@@ -108,10 +108,12 @@ h<div align="center">
 
 | Project | Description |
 |:--------|:------------|
-| **[Garuda](https://github.com/certainly-param/garuda-accelerator)** | RISC-V INT8 accelerator with CVA6 integration via CVXIF interface |
-| **[PSF Design Lab](https://github.com/certainly-param)** | AI predictability toolkit using LLM classification, entropy & KL divergence |
-| **[TrialMatch-AI](https://github.com/certainly-param)** | Clinical trial matching with RAG pipeline and medical CoT reasoning |
-| **[Raft-FMSS](https://github.com/certainly-param)** | Distributed consensus verification using TLA+ and KLEE symbolic execution |
+| **[Garuda](https://github.com/certainly-param/garuda-accelerator)** | RISC-V INT8 accelerator with 7.5-9× latency reduction for attention microkernels |
+| **[PSF Design Lab](https://github.com/certainly-param/psf-design-lab)** | AI predictability assessment toolkit with hybrid measurement (entropy + KL divergence + LLM) |
+| **[TraceLens](https://github.com/certainly-param/tracelens)** | Visual debugger for LangGraph workflows with time-travel debugging and real-time visualization |
+| **[VAC](https://github.com/certainly-param/vac)** | Capability-based security for AI agents with task-scoped credentials and instant revocation |
+| **[Axiom](https://github.com/certainly-param/Axiom)** | Hybrid verification framework (KLEE + TLA+) for distributed systems with 100% coverage for Raft |
+| **[Serverless RAG Chatbot](https://github.com/certainly-param/serverless-rag-chatbot)** | Scale-to-zero RAG architecture with $0/month when idle and 30-60% cost reduction via caching |
 
 ---
 
@@ -121,10 +123,11 @@ h<div align="center">
 
 | Contribution | Description |
 |:-------------|:------------|
-| **[pydantic-ai](https://github.com/pydantic/pydantic-ai)** | Async locking for thread-safe usage tracking; structured citation system |
-| **[vLLM](https://github.com/vllm-project/vllm)** | Blackwell GPU (SM100+) INT8 quantization fixes and FP8 fallbacks |
-| **[CVA6](https://github.com/openhwgroup/cva6)** | RV64 interrupt cause recording fix; eliminated unintended latches |
-| **[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)** | Resource leak diagnostics for Streamable HTTP transport |
+| **[pydantic-ai](https://github.com/pydantic/pydantic-ai)** | Fixed race condition in parallel tool execution with targeted locking |
+| **[vLLM](https://github.com/vllm-project/vllm)** | INT8 quantization fix for Blackwell GPUs (SM100+) with early validation and FP8 guidance |
+| **[CVA6 RISC-V](https://github.com/openhwgroup/cva6)** | Fixed interrupt encoding in RV64 + inferred latch fix - improves hardware reliability |
+| **[MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)** | Resource leak fix in SSE handlers with comprehensive test suite |
+| **[Anthropic Skills](https://github.com/anthropics/skills)** | Performance optimization: 90% reduction in bounding box comparisons for multi-page forms |
 
 ---
 
