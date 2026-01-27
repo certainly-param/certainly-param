@@ -36,7 +36,7 @@ h<div align="center">
 
 [![Website](https://img.shields.io/badge/Website-0d1117?style=flat-square&logo=vercel&logoColor=00ff00)](https://paramsc.dev/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=00ff00)](http://www.linkedin.com/in/param-chaudhari-07a400236)
-[![Email](https://img.shields.io/badge/Email-0d1117?style=flat-square&logo=gmail&logoColor=00ff00)](mailto:psch@cs.unc.edu)
+[![Email](https://img.shields.io/badge/Email-0d1117?style=flat-square&logo=gmail&logoColor=00ff00)](mailto:paramchaudhari.work@gmail.com)
 [![Blog](https://img.shields.io/badge/Blog-0d1117?style=flat-square&logo=medium&logoColor=00ff00)](https://medium.com/@paramchaudhari.work)
 [![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=flat-square&logo=github&logoColor=00ff00)](https://github.com/certainly-param)
 
