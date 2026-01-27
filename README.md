@@ -1,4 +1,4 @@
-h<div align="center">
+<div align="center">
 
 <!-- Terminal Window Frame -->
 <table>
