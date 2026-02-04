@@ -111,7 +111,7 @@
 | **[Garuda](https://github.com/certainly-param/garuda-accelerator)** | RISC-V INT8 accelerator with 7.5-9× latency reduction for attention microkernels |
 | **[PSF Design Lab](https://github.com/certainly-param/psf-design-lab)** | AI predictability assessment toolkit with hybrid measurement (entropy + KL divergence + LLM) |
 | **[TraceLens](https://github.com/certainly-param/tracelens)** | Visual debugger for LangGraph workflows with time-travel debugging and real-time visualization |
-| **[VAC](https://github.com/certainly-param/vac)** | Capability-based security for AI agents with task-scoped credentials and instant revocation |
+| **[VAC](https://github.com/certainly-param/VAC-protocol)** | Capability-based security for AI agents with task-scoped credentials and instant revocation |
 | **[Axiom](https://github.com/certainly-param/Axiom)** | Hybrid verification framework (KLEE + TLA+) for distributed systems with 100% coverage for Raft |
 | **[Serverless RAG Chatbot](https://github.com/certainly-param/serverless-rag-chatbot)** | Scale-to-zero RAG architecture with $0/month when idle and 30-60% cost reduction via caching |
 
