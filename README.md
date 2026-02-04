@@ -135,6 +135,7 @@
 ### $ curl blog.rss
 
 <!-- BLOG-POST-LIST:START -->
+- [The Molting of the Claw: Why Autonomous Agents Need a Verifiable Shell](https://medium.com/@paramchaudhari.work/the-molting-of-the-claw-why-autonomous-agents-need-a-verifiable-shell-06686b9e1502?source=rss-8f6454702aa6------2)
 - [The Paradox of Choice: A Human’s Guide to Selecting the Right AI Model](https://medium.com/@paramchaudhari.work/the-paradox-of-choice-a-humans-guide-to-selecting-the-right-ai-model-da5fb1063e9a?source=rss-8f6454702aa6------2)
 <!-- BLOG-POST-LIST:END -->
 
