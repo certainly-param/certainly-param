@@ -145,9 +145,9 @@
 ### $ tail -f activity.log
 
 <!--START_SECTION:activity-->
-1. 🔒 Closed issue [#6947](https://github.com/verilator/verilator/issues/6947) in [verilator/verilator](https://github.com/verilator/verilator)
-2. 🗣 Commented on [#6947](https://github.com/verilator/verilator/issues/6947#issuecomment-3789076731) in [verilator/verilator](https://github.com/verilator/verilator)
-3. ❗ Opened issue [#6947](https://github.com/verilator/verilator/issues/6947) in [verilator/verilator](https://github.com/verilator/verilator)
+1. 💪 Opened PR [#3259](https://github.com/emmabostian/developer-portfolios/pull/3259) in [emmabostian/developer-portfolios](https://github.com/emmabostian/developer-portfolios)
+2. 🔒 Closed issue [#6947](https://github.com/verilator/verilator/issues/6947) in [verilator/verilator](https://github.com/verilator/verilator)
+3. 🗣 Commented on [#6947](https://github.com/verilator/verilator/issues/6947#issuecomment-3789076731) in [verilator/verilator](https://github.com/verilator/verilator)
 <!--END_SECTION:activity-->
 
 ---
