@@ -37,7 +37,7 @@
 [![Website](https://img.shields.io/badge/Website-0d1117?style=flat-square&logo=vercel&logoColor=00ff00)](https://paramsc.dev/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=00ff00)](http://www.linkedin.com/in/param-chaudhari-07a400236)
 [![Email](https://img.shields.io/badge/Email-0d1117?style=flat-square&logo=gmail&logoColor=00ff00)](mailto:paramchaudhari.work@gmail.com)
-[![Blog](https://img.shields.io/badge/Blog-0d1117?style=flat-square&logo=medium&logoColor=00ff00)](https://medium.com/@paramchaudhari.work)
+[![Blog](https://img.shields.io/badge/Blog-0d1117?style=flat-square&logo=medium&logoColor=00ff00)](https://medium.com/@paramchaudhari)
 [![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=flat-square&logo=github&logoColor=00ff00)](https://github.com/certainly-param)
 
 ---
@@ -153,9 +153,9 @@
 ---
 
 
-![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=000000&style=flat-square&label=VISITORS)
-![GitHub Stars](https://img.shields.io/badge/STARS-11-000000?style=flat-square&labelColor=0d1117)
-![GitHub Forks](https://img.shields.io/badge/FORKS-6-000000?style=flat-square&labelColor=0d1117)
+![Profile Views](https://komarev.com/ghpvc/?username=certainly-param&color=00ff00&style=flat-square&label=VISITORS)
+![GitHub Stars](https://img.shields.io/badge/STARS-11-00ff00?style=flat-square&labelColor=0d1117)
+![GitHub Forks](https://img.shields.io/badge/FORKS-6-00ff00?style=flat-square&labelColor=0d1117)
 
 <br>
 
