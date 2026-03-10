@@ -146,9 +146,9 @@
 ### $ tail -f activity.log
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#3729](https://github.com/pydantic/pydantic-ai/pull/3729#issuecomment-4014450013) in [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)
-2. 🎉 Merged PR [#3259](https://github.com/emmabostian/developer-portfolios/pull/3259) in [emmabostian/developer-portfolios](https://github.com/emmabostian/developer-portfolios)
-3. 💪 Opened PR [#3259](https://github.com/emmabostian/developer-portfolios/pull/3259) in [emmabostian/developer-portfolios](https://github.com/emmabostian/developer-portfolios)
+1. 🗣 Commented on [#3729](https://github.com/pydantic/pydantic-ai/pull/3729#issuecomment-4029153771) in [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)
+2. 🗣 Commented on [#3729](https://github.com/pydantic/pydantic-ai/pull/3729#issuecomment-4014450013) in [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)
+3. 🎉 Merged PR [#3259](https://github.com/emmabostian/developer-portfolios/pull/3259) in [emmabostian/developer-portfolios](https://github.com/emmabostian/developer-portfolios)
 <!--END_SECTION:activity-->
 
 ---
