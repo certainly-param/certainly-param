@@ -135,6 +135,7 @@
 ### $ curl blog.rss
 
 <!-- BLOG-POST-LIST:START -->
+- [An AI Disproved an 80-Year-Old Math Conjecture. The Prompt Was One Paragraph.](https://paramchaudhari.medium.com/an-ai-disproved-an-80-year-old-math-conjecture-the-prompt-was-one-paragraph-087b2e091fcb?source=rss-8f6454702aa6------2)
 - [History of World Models: From Mental Simulators to AI’s Next Frontier](https://pub.towardsai.net/history-of-world-models-from-mental-simulators-to-ais-next-frontier-340c9e3bed3a?source=rss-8f6454702aa6------2)
 - [The Molting of the Claw: Why Autonomous Agents Need a Verifiable Shell](https://paramchaudhari.medium.com/the-molting-of-the-claw-why-autonomous-agents-need-a-verifiable-shell-06686b9e1502?source=rss-8f6454702aa6------2)
 - [The Paradox of Choice: A Human’s Guide to Selecting the Right AI Model](https://paramchaudhari.medium.com/the-paradox-of-choice-a-humans-guide-to-selecting-the-right-ai-model-da5fb1063e9a?source=rss-8f6454702aa6------2)
