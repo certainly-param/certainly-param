@@ -147,7 +147,7 @@
 ### $ tail -f activity.log
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#3729](https://github.com/pydantic/pydantic-ai/pull/3729#issuecomment-4216100245) in [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)
+1. 💪 Opened PR [#1152](https://github.com/sunlabuiuc/PyHealth/pull/1152) in [sunlabuiuc/PyHealth](https://github.com/sunlabuiuc/PyHealth)
 2. 🗣 Commented on [#3729](https://github.com/pydantic/pydantic-ai/pull/3729#issuecomment-4014450013) in [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)
 3. 🎉 Merged PR [#3259](https://github.com/emmabostian/developer-portfolios/pull/3259) in [emmabostian/developer-portfolios](https://github.com/emmabostian/developer-portfolios)
 <!--END_SECTION:activity-->
