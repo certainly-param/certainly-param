@@ -147,8 +147,8 @@
 ### $ tail -f activity.log
 
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#1152](https://github.com/sunlabuiuc/PyHealth/pull/1152) in [sunlabuiuc/PyHealth](https://github.com/sunlabuiuc/PyHealth)
-2. 🗣 Commented on [#3729](https://github.com/pydantic/pydantic-ai/pull/3729#issuecomment-4014450013) in [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai)
+1. 🎉 Merged PR [#8](https://github.com/Maxed-OSS/maxed-mcp/pull/8) in [Maxed-OSS/maxed-mcp](https://github.com/Maxed-OSS/maxed-mcp)
+2. 💪 Opened PR [#8](https://github.com/Maxed-OSS/maxed-mcp/pull/8) in [Maxed-OSS/maxed-mcp](https://github.com/Maxed-OSS/maxed-mcp)
 3. 🎉 Merged PR [#3259](https://github.com/emmabostian/developer-portfolios/pull/3259) in [emmabostian/developer-portfolios](https://github.com/emmabostian/developer-portfolios)
 <!--END_SECTION:activity-->
 
